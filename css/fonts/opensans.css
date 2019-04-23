@@ -1,0 +1,38 @@
+/* OPTIONS 
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Prata', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Proza Libre', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+p {
+   font-family: 'Open Sans', sans-serif;
+    
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montseratt', sans-serif;
+}
+a {
+  font-family: 'Raleway', sans-serif;
+}
+
+em {
+  font-family: 'Playfair Display', serif;
+}

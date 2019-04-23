@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Design Language Master</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>  <!-- I am using this as it makes custom cursor implementation easier-->
+        <script src=""></script>
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/test.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/animations.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/fonts/opensans.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- CUSTOM MOUSE -->
+        <script src="js/mouse.js"></script>
+        <script src="js/interact.js"></script>
+        <script src="js/fadein.js"></script>
+        
+        <link href="css/mouse.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="files/uploads/favicon.png"/>
+        <!-- EMOJI --->
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Crimson+Text|Fjalla+One|Montserrat|Montserrat+Alternates|Montserrat+Subrayada|Open+Sans|Oswald|Playfair+Display|Playfair+Display+SC|Poppins|Prata|Proza+Libre|Raleway|Work+Sans" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script>
+            window.sr = ScrollReveal();
+        ScrollReveal().reveal('.nav-bar');
+        </script>
+        
+    </head>
+    
+    <body class="smooth-scroll">
+        <figure id="mouse-pointer"></figure>
+
+        <main>
+        <div class="nav">
+            <a id="top"></a>
+            <div class="sticky bg-gradient tc">
+            <h6>Welcome to the template! This is a sticky: used for news, time-sensitive links, or perhaps a simple greeting. </h6>
+            </div>
+            <nav class="bg-dark">
+                <div class="nav-bar">
+                    <div class="left">
+                        <a href="index.html">
+                            <img class="logo" alt="Logo" src="img/samplelogo.png" />
+                        </a>
+                    </div>
+            
+                    <div class="right">
+                        <ul class="underline">
+                            <li><a href="#cards">Cards</a></li>
+                            <li><a href="">What is it?</a></li>
+                            <li><a href="#quote">Quote</a></li>
+                            <li><a href="#cta">CTA</a></li>
+                            <li><a href="#cta">CTA</a></li>
+                            <a class="btn btn-gradient" href="#">Call to action</a>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </nav>
+        </div>
+    
+        
+        <div class="main-container">
+            
+            <!-- COVER -->
+            
+               
+                <div class="hero-image cover hero image parallax h100 bg-dark" >
+                        
+                    <h1 class="text-gradient ">A heading that's not just <em>expressive</em>, but </h1>
+                    <h1 class="text-image " style="display:inline; background-image:url(img/cool.jpeg)">hella cool</h1>
+                   
+                </div>
+            
+            
+            <!-- CTA -->
+            <section>
+                <div class="h30 bg-gradient image parallax tc">
+                    
+                       <h3>A heading that goes into a bit <em>more</em> detail. This <em>expands</em> on the point of the cover.</h3>
+                      
+                    </div>
+                
+            </section>
+            
+            <!-- CARDS  -->
+            <section>
+                <div class="h80 bg-dark">
+                    <h2 class="title tc">Cards Section</h2>
+                    <div class="spacer-small"></div>
+                    <div class="cards">
+                        <div class="card">1</div>
+                        <div class="card">2</div>
+                        <div class="card">3</div>
+                        <div class="card">4</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CARDS  -->
+            <section>
+                <div class="hv bg-gradient">
+                    <h2 class="title tc">Play videos</h2>
+                    <div class="spacer-small"></div>
+                    <div style="padding-top: 50.07%; position: relative; overflow: hidden;"><iframe frameborder="0" allowfullscreen="" scrolling="no" src="https://onelineplayer.com/player.html?autoplay=false&loop=true&autopause=false&muted=false&url=https%3A%2F%2Fvimeo.com%2F226137389&poster=&time=true&progressBar=true&playButton=true&overlay=true&muteButton=true&fullscreenButton=true&style=light&logo=true&quality=720p" style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px;"></iframe></div>
+
+                </div>
+            </section>
+            
+            <!-- CTA -->
+            <section>
+                <div class="h50 bg-gradient image parallax tc">
+                    <div class="spacer-medium"></div>
+                    <h6 class="sub">There's no time like the present</h6>
+                    <div class="spacer-small"></div>
+                       <h2>This is a simple call to action.</h2>
+                     <h3>Just do it.</h3>
+                    <div class="spacer-small"></div>
+                       <a class="btn btn-dark" href="#">Call to action</a>
+                    </div>
+                
+            </section>
+            
+            <!-- Text + Image #1 -->
+            
+            <section>
+                <div class="imagetext bg-dark">
+                    <div class="image-left bg-dark" style="background-image: url(img/cover.jpg)">
+                    </div>
+                    <div class="text-right">
+                    <div class="paragraph">
+                    <h6 class="sub">Here is why we do this</h6>
+                    <div class="spacer-small"></div>
+                    <h2>Hi there</h2>
+                    <p>Here's a little about my story</p>
+                </div></div></div>
+            </section>
+            
+            <!-- Text + Image #2 -->
+            
+            <section>
+                <div class="imagetext bg-dark">
+                    <div class="text-left bg-dark">
+                        <div class="paragraph">
+                    <h4>You thought that was cool?</h4>
+                    <p>Watch this</p>
+                </div>
+                    </div>
+                    <div class="image-right" style="background-image: url(img/cover.jpg)"></div>
+                </div>
+            </section>
+            
+            <!-- GALLERY  -->
+            <section>
+                <div class="h80 bg-dark">
+                    <h2 class="title tc">Gallery</h2>
+                    <div class="spacer-small"></div>
+                    <div class="cards">
+                        <div class="card">1</div>
+                        <div class="card">2</div>
+                        <div class="card">3</div>
+                        <div class="card">4</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Quotes -->
+            
+            <section>
+                <div class="h50 bg-gradient  image parallax tc">
+                        <div class="spacer-medium"></div>
+                       <h2 class="title"><em>"A quote about the project"</em></h2>
+                        <p class="lead">-Who it's by</p>
+                    
+                </div>
+            </section>
+            
+            <!-- About -->
+            
+            <section>
+                <div class="container-fullscreen tc  image parallax h80 bg-dark">
+                   
+                       <h2 class="title tl">The story of this project</h2>
+                        <div class="spacer-medium"></div>
+                       <p class="paragraph">When you’re <a href="">lying</a> in the dust of fallen empires guts aspilled, for whom do you pray?
+ e gods?  is is their doing, all of it. Your bold comrades? If you could rely on them you wouldn’t be here. Your precious old mother? She’s a darling but what will she do for you but weep and mourn. No, you pray for death’s gray bird, a bonepicker, to lay a hand upon you, and the cauter, and to tell you whether you will live or die.m</p>
+                    
+                </div>
+            </section>
+            
+            <!-- CTA Bottom -->
+            
+           <!-- CTA -->
+            <section>
+                <div class="h50 bg-gradient image parallax tc">
+                    
+                       <h2>Call to <em>action</em> statement.</h2>
+                       <div class="spacer-small"></div>
+                       <a class="btn btn-dark" href="#">Call to action</a>
+                    </div>
+                
+            </section>
+            
+            <!-- Contact -->
+            
+            <section>
+                <div class="container-fullscreen">
+                    <div class=" bg-dark h40 tc">
+                       <h2 class="title">Let's chat</h2>
+                       <div class="spacer-medium"></div>
+                        <a class="btn btn-dark" href="#">Email@email.com</a>
+                    </div>
+                </div>
+            </section>
+            
+             <!-- Footer -->
+            
+  
+            
+            <div class="sticky bg-gradient tc">
+                <h6>Made with love by<a href="https://jdlindsay.com" target="_blank"> J.D. Lindsay</a></h6>
+            </div>
+            
+            
+         
+            
+        </div>
+        <script src="js/parallax.js"></script>
+      </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* OPTIONS 
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Prata', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Proza Libre', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+body {
+  font-family: 'Prata', serif;
+}
+a {
+  font-family: 'Playfair Display SC', serif;
+}

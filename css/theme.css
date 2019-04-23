@@ -1,0 +1,369 @@
+body {
+    margin:0px;  
+    cursor: url("circle.svg"), auto;
+    
+}
+
+
+section {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* SPACERS*/
+
+div[class*='spacer-'] { display: block; }
+.spacer-mini { height: 15px; }
+.spacer-small { height: 25px; }
+.spacer-medium { height: 50px; }
+.spacer-big { height: 100px; }
+
+/* SECTIONS */
+
+
+p {
+    font-weight: 300;
+    font-size: 2.6vh;
+}
+
+.hero {
+    color: white;
+}
+/* ELEMENTS */
+
+a {
+    color:white;
+}
+
+h1 {
+    font-size: 8.3vw;
+    padding: 64px;
+     margin:0px;
+}
+
+h2 {
+    font-size:4.5vw;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+
+h3 {
+    font-size:3vw;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-weight: 200;
+}
+
+h4 {
+    font-size:2vw;
+}
+
+h5 {
+    font-size:1.7vw;
+}
+
+
+h1,h2,h3,h4,h5, h6 {
+
+     text-shadow: 2px 2px 0px rgba(0,0,0,0.15);
+ 
+}
+
+.sub {
+    padding:0px;
+    font-weight: 100;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
+h6 {
+    font-size: 1.1vw;
+    margin:0px;
+ 
+}
+
+/* TITLES */
+
+.text-image {
+  background-image: url(../img/cover.jpg);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.text-gradient {
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(#F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    text-shadow: none;
+
+}
+
+/* BUTTONS */
+
+
+
+
+
+
+.btn {
+    line-height: 48px;
+    padding: 12px;
+    border-radius: 1px;
+    text-shadow: 11px;
+    color:white !important;
+    max-height: 48px;
+    text-decoration: none !important;
+}
+
+.btn-dark {
+     background-color: #111111;
+    
+}
+
+.btn-gradient {
+   
+ 
+   color:black;
+  border: solid 4px transparent;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), linear-gradient(to right, #F27121, #E94057, #8A2387);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #111111 inset; 
+
+}
+
+/* NAVIGATION */ 
+.nav-bar {
+    display: flex; /* or inline-flex */
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 72px;
+    line-height: 72px;
+    
+}
+.nav-bar ul,li {
+    color: white;
+    display: inline;
+    padding: 10px 15px 10px 15px;
+}
+
+.logo {
+    height: 48px;
+    padding: 25%;
+    
+}
+a {
+    text-decoration: underline;
+    
+}
+
+
+.nav-bar a {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+.btn a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-bar .logo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right {
+    align-content: right;
+}
+
+.sticky {
+    color:white;
+    height:48px;
+    line-height: 48px; 
+}
+
+/*  HERO */
+
+
+
+h5 {
+    padding:0px;margin:0px;
+}
+
+
+.tc {
+    text-align: center;
+}
+
+.paragraph {
+    text-align: left;
+    padding-left:30%;
+    padding-right:30%;
+    
+
+}
+
+.module {
+  max-width: 250px;
+  padding: 1rem;
+  color: white;
+  00%;
+}
+
+.bg-dark {
+    background-color: #121212;
+    color:white;
+}
+
+.bg-light {
+    background-color: #ffffff;
+    color:black;
+}
+
+
+
+.bg-gradient {
+   background: #8A2387;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+   color:white;
+}
+
+.cover {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  height: 100vh;
+    
+}
+
+.h10 {
+    margin: 0px;
+    
+    padding: 64px;
+    padding-top: 24px;
+    max-height: 10%;
+    height: 10vh;   
+}
+
+.h15 {
+    margin: 0px;
+    padding: 64px;
+    padding-top: 24px;
+    max-height: 15%;
+    height: 15vh;   
+}
+
+.h20 {
+    margin: 0;
+    padding: 48px;
+    max-height: 20%;
+    height: 20vh;   
+}
+
+.h30 {
+    margin: 0;
+    padding: 48px;
+    max-height: 30%;
+    height: 30vh;   
+}
+
+.h40 {
+    margin: 0;
+    padding: 48px;
+    max-height: 40%;
+    height: 40vh;   
+}
+
+
+.h50 {
+    /* margin: 12px; COOL look, will use later */
+   
+    padding: 48px;
+    max-height: 50%;
+    height: 50vh;   
+}
+
+/* Variable height */
+
+.hv {
+    overflow:hidden;
+    
+    padding: 48px;
+    
+}
+
+.h80 {
+    margin: 0;
+    padding: 48px;
+    max-height: 80%;
+    height: 80vh; 
+}
+
+.imagetext {
+    display:flex;
+    height: 80vh;
+}
+
+.image-left {
+    display:flex;
+    width: 50%;
+}
+.image-right {
+    display:flex;
+    width: 50%;
+}
+
+.paragraph {
+    padding: 48px;
+    padding-left: 64px;
+    width: 100%;
+}
+
+.text-left {
+    display:flex;
+    width: 50%;
+    
+}
+
+.text-right {
+    display:flex;
+    text-align: left;
+    width: 50%;
+    
+}
+
+/* ANIMATIONS For fadein.js */
+
+html { /* This helps look transition look natural with a dark theme */
+    background-color: black;
+}
+
+section {
+  opacity: 0;
+  transition: 1s opacity;
+    
+}
+
+section.visible { 
+  opacity: 1;
+}
+

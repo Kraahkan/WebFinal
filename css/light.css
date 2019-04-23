@@ -1,0 +1,19 @@
+
+section {
+    margin: 16px;
+}
+
+nav {
+    margin: 0px 16px 16px 16px;
+}
+.sticky {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+nav {
+    height: 48px;
+}
+
+.nav-bar {
+    line-height: 48px;
+}
