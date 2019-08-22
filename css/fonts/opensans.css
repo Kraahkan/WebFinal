@@ -23,9 +23,13 @@ body {
     font-weight: 100;
 }
 p {
-   font-family: 'Open Sans', sans-serif;
-    
+   font-family: 'Open Sans', sans-serif; 
 }
+
+btn {
+    font-family: 'Open Sans', sans-serif;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Montseratt', sans-serif;
 }

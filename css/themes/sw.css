@@ -1,0 +1,12 @@
+
+
+.btn-light {
+    background-image: none;
+    background-color: rgb(247, 219, 21);
+    color: #000000 !important;
+}
+
+.bg-primary {
+   background-color: rgb(247, 219, 21);
+    color: #111111;
+}

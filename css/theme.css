@@ -1,7 +1,13 @@
+/* Add this https://gist.github.com/tunguskha/0d82bfeb498567a4e19493925df529cb -->*/
+
 body {
     margin:0px;  
     cursor: url("circle.svg"), auto;
-    
+    background: #111111;
+}
+
+figure {
+    margin:0; /* Collapse to allow custom mouse pointer properly functioning */
 }
 
 
@@ -22,23 +28,25 @@ div[class*='spacer-'] { display: block; }
 /* SECTIONS */
 
 
-p {
-    font-weight: 300;
-    font-size: 2.6vh;
-}
 
 .hero {
     color: white;
 }
 /* ELEMENTS */
 
+
 a {
-    color:white;
+    color: inherit;
+}
+
+.title {
+    
+    padding: 10% 0;
 }
 
 h1 {
-    font-size: 8.3vw;
-    padding: 64px;
+    font-size: 5.3vw;
+    
      margin:0px;
 }
 
@@ -50,10 +58,8 @@ h2 {
 
 
 h3 {
-    font-size:3vw;
-    margin-bottom: 12px;
-    margin-top: 12px;
-    font-weight: 200;
+    font-size:3.5vw;
+    margin: 0px;
 }
 
 h4 {
@@ -65,7 +71,13 @@ h5 {
 }
 
 
-h1,h2,h3,h4,h5, h6 {
+p {
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
 
      text-shadow: 2px 2px 0px rgba(0,0,0,0.15);
  
@@ -74,17 +86,70 @@ h1,h2,h3,h4,h5, h6 {
 .sub {
     padding:0px;
     font-weight: 100;
-    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-decoration: none;
 }
 
 h6 {
-    font-size: 1.1vw;
+    font-size: 2vh;
     margin:0px;
  
 }
+
+.tile {
+    display: inline-block;
+    width: 800px;
+    height: 90vh;
+    padding-top: 5%;
+    padding-top: 200px;
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+}
+
+.scrolling {
+    
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+ 
+
+}
+
+/* GALLERIES */
+
+body {
+  margin: 0px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.gallery-container img {
+  margin: 0px;
+  transition: all 1s;
+  width: 50%;
+  height: 10%;
+}
+
+.gallery-container img:hover {
+    opacity: 0.9;
+	 transition: opacity .5s ease-out;
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery-container img {
+    margin: 0px;
+    transition: all 1s;
+    width: 100%;
+    height: 10%;
+}
+  }
 
 /* TITLES */
 
@@ -96,11 +161,15 @@ h6 {
 
 .text-gradient {
     background: #8A2387;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(#F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(#F27121, #E94057, #8A2387);  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
     text-shadow: none;
 
+}
+
+.centre {
+    margin: 0 auto;
 }
 
 /* BUTTONS */
@@ -112,22 +181,37 @@ h6 {
 
 .btn {
     line-height: 48px;
-    padding: 12px;
+    padding: 16px 24px;
+    margin-right: 16px;
     border-radius: 1px;
     text-shadow: 11px;
     color:white !important;
     max-height: 48px;
     text-decoration: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.1);
+    font-weight: 600;
 }
 
 .btn-dark {
-     background-color: #111111;
-    
+    background-color: #111111;
+    border-radius: 4px;
+}
+
+.btn-light {
+    background-image: linear-gradient(to right, #F27121, #E94057, #8A2387);
+    border-radius: 4px;
+}
+
+.btn-white {
+    background: #ffffff;
+    border-radius: 4px;
+    color: #000000 !important;
+    font-weight: 900 !important;
 }
 
 .btn-gradient {
    
- 
+ padding: 12px;
    color:black;
   border: solid 4px transparent;
   background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), linear-gradient(to right, #F27121, #E94057, #8A2387);
@@ -142,7 +226,6 @@ h6 {
     display: flex; /* or inline-flex */
     justify-content: space-between;
     margin-left: 16px;
-    margin-right: 16px;
     height: 72px;
     line-height: 72px;
     
@@ -155,14 +238,27 @@ h6 {
 
 .logo {
     height: 48px;
-    padding: 25%;
-    
+    padding: 25%;   
 }
+
+.left {
+    padding-left: 16px;
+}
+
 a {
     text-decoration: underline;
     
 }
 
+@media only screen and (max-width: 800px) {
+.right {
+    display: none;
+}
+    .left {
+        justify-content: center;
+    }
+    
+}
 
 .nav-bar a {
     color: #ffffff;
@@ -195,13 +291,23 @@ a {
 
 .sticky {
     color:white;
-    height:48px;
-    line-height: 48px; 
+    height:32px;
+    line-height: 32px; 
+    padding: 12px;
 }
 
 /*  HERO */
 
+.header {
+ padding-top: 25vh;
+ padding-left: 5vh;
+padding-right: 5vh;
+    
+}
 
+.nav-bar .btn {
+    margin-right: 0px;
+}
 
 h5 {
     padding:0px;margin:0px;
@@ -214,9 +320,17 @@ h5 {
 
 .paragraph {
     text-align: left;
+    padding-bottom: 48px;
     padding-left:30%;
     padding-right:30%;
+
+}
+
+.pl {
+    text-align: left;
     
+    padding-left:0%;
+    padding-right:30%;
 
 }
 
@@ -237,6 +351,11 @@ h5 {
     color:black;
 }
 
+.bg-primary {
+    background-color: #8A2387;
+    color:white;
+}
+
 
 
 .bg-gradient {
@@ -249,57 +368,47 @@ h5 {
 
 .cover {
   margin: 0;
-  padding: 0;
-  max-height: 100%;
-  height: 100vh;
-    
+  padding: 48px 48px 48px 48px;
+  max-height: 1100vh;
+  background-size: cover;
 }
 
 .h10 {
     margin: 0px;
-    
     padding: 64px;
     padding-top: 24px;
-    max-height: 10%;
-    height: 10vh;   
+    max-height: 10vh;   
 }
 
 .h15 {
     margin: 0px;
     padding: 64px;
     padding-top: 24px;
-    max-height: 15%;
-    height: 15vh;   
+    max-height: 15vh;   
 }
 
 .h20 {
     margin: 0;
     padding: 48px;
-    max-height: 20%;
-    height: 20vh;   
+    max-height: 20vh;   
 }
 
 .h30 {
     margin: 0;
     padding: 48px;
-    max-height: 30%;
-    height: 30vh;   
+    max-height: 30vh;   
 }
 
 .h40 {
     margin: 0;
     padding: 48px;
-    max-height: 40%;
-    height: 40vh;   
+    max-height: 40vh;   
 }
-
 
 .h50 {
     /* margin: 12px; COOL look, will use later */
-   
-    padding: 48px;
-    max-height: 50%;
-    height: 50vh;   
+    padding: 64px;
+    max-height: 50vh;   
 }
 
 /* Variable height */
@@ -318,38 +427,48 @@ h5 {
     height: 80vh; 
 }
 
+
+
+
+.imagetextheader {
+    display:flex;
+    min-height: 80vh;  
+}
+
 .imagetext {
     display:flex;
-    height: 80vh;
+    min-height: 60vh;
+    
 }
 
 .image-left {
     display:flex;
     width: 50%;
+    
+    
 }
 .image-right {
     display:flex;
     width: 50%;
+    
 }
 
-.paragraph {
-    padding: 48px;
-    padding-left: 64px;
-    width: 100%;
-}
 
 .text-left {
     display:flex;
     width: 50%;
-    
+    padding-top: 32px;
 }
 
 .text-right {
-    display:flex;
+   padding-top: 32px;
     text-align: left;
     width: 50%;
     
+    
 }
+
+
 
 /* ANIMATIONS For fadein.js */
 
